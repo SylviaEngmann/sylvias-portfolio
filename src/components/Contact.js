@@ -13,25 +13,27 @@ class Contact extends Component {
         return(
             <div className="contactDiv">
                 <ul>
-                    <li>
+                    {/* <li>
                         <a 
                         href = "#home"
                         style={linkStyle}
-                        className="link-font"
                         >
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            <span>Contact</span>
+                            <FontAwesomeIcon 
+                            className="contactList"
+                            icon={faEnvelope} />
+                            Contact
                         </a>
                     </li>
                     <li>
                         <a href = "#home"
                         style={linkStyle}
-                        className="link-font"
                         >
-                            <FontAwesomeIcon icon={faBriefcase} />
-                            <span>Portfolio</span>
+                            <FontAwesomeIcon 
+                            className="contactList"
+                            icon={faBriefcase} />
+                            Portfolio
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         )
