@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Contact from './components/Contact';
+import Socials from './components/Socials';
+
+const linkStyle = {
+  textDecoration: 'none'
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="home"
+          style={linkStyle}
+          href="#home"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          SME.
         </a>
       </header>
+      <body>
+        <Socials></Socials>
+        <Contact></Contact>
+      </body>
     </div>
   );
 }
