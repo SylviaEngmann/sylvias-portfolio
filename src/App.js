@@ -1,4 +1,6 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Container, Row, Col} from 'react-bootstrap';
 import Contact from './components/Contact';
 import Socials from './components/Socials';
 import Logo from './components/Logo';
@@ -8,17 +10,28 @@ import Intro from './components/Intro';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logo></Logo>
-      </header>
-      <body>
-        <Socials></Socials>
-        <Intro></Intro>
-        <ProfileImage></ProfileImage>
-        <Contact></Contact>
-      </body>
-    </div>
+      <Container fluid>
+        <Row>
+          <Col sm={6}>
+            <Logo />
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={3}>
+            <Socials />
+          </Col>
+          <Col sm={9}>
+            <Row>
+              <Col sm={6}>
+                <Intro/>
+              </Col>
+              <Col sm={6}>
+                <ProfileImage />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
   );
 }
 

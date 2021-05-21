@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
@@ -7,8 +7,7 @@ import {faBehance} from '@fortawesome/free-brands-svg-icons';
 import '../App.css';
 
 
-class Socials extends Component {
-    render() {
+function Socials() {
         return(
             <div className="socials">
                 <ul>
@@ -36,6 +35,5 @@ class Socials extends Component {
             </div>
         )
     }
-}
 
 export default Socials;

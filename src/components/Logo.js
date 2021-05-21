@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 
 const linkStyle = {
@@ -6,20 +6,20 @@ const linkStyle = {
     
   };
 
-class Logo extends Component {
-    render() {
+function Logo () {
         return(
-            <a 
-            className="home"
-            style={linkStyle}
-            href="#home"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-                SME.
-            </a>
+            
+                    <a 
+                    className="home"
+                    style={linkStyle}
+                    href="#home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    SME.
+                    </a>
+            
         )
     }
-}
 
 export default Logo;

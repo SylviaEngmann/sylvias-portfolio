@@ -1,14 +1,14 @@
-.App {
-    color: white;
+body {
+    background-color: black !important;
+    color: white !important;
 }
 
 a.home {
   color: white;
   font-size: 1.5em;
   font-weight: 900;
-  position: relative;
-  left: 100px;
-  top: 50px;
+  padding: 5rem;
+  /* top: 50px; */
 }
 
 a {
@@ -30,34 +30,59 @@ li{
 }
 
 .socials {
-  position: absolute;
-  top: 200px;
+  margin: 5rem;
   display: block;
 }
-
-.contactDiv {
-  display: flex;
-  /* left: 3rem; */
+.icon {
+  width: 3rem;
+  height: 3rem;
 }
 
-.profImage {
-  position: absolute;
-  top: 150px;
-  right: 100px;
+ul.contactDiv {
+  text-align: center;
+}
+
+ul.contactDiv li {
+  display: inline-block;
+  margin: 25rem 5rem;
+}
+
+.contactIcon{
+  position: relative;
+  top: 5px;
+  left: 5px;
+  margin-right: 10px;
+}
+
+div .profileimg {
+  margin-top: 3rem;
 }
 
 .profileimg {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .intro {
-  position: absolute;
-  top: 180px;
-  left: 350px;
+  margin-top: 7rem;
 }
 
-p {
+.intro h1 {
   font-size: 40px;
 }
 
+.intro p {
+  font-size: 30px;
+}
+
+
+@media (min-width: 576px) { 
+  /* ul.contactDiv {
+    text-align: center;
+  } */
+  
+  ul.socials li {
+    display: inline-block;
+    margin: 6rem;
+  }
+ }

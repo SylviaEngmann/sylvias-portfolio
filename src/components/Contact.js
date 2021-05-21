@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
@@ -8,20 +8,19 @@ const linkStyle = {
     textDecoration: 'none'
   };
 
-class Contact extends Component {
-    render() {
+function Contact() {
         return(
-            <div className="contactDiv">
-                <ul>
-                    {/* <li>
+            <div>
+                <ul className="contactDiv">
+                    <li>
                         <a 
                         href = "#home"
                         style={linkStyle}
                         >
                             <FontAwesomeIcon 
-                            className="contactList"
+                            className="contactIcon icon"
                             icon={faEnvelope} />
-                            Contact
+                            {/* Contact */}
                         </a>
                     </li>
                     <li>
@@ -29,16 +28,16 @@ class Contact extends Component {
                         style={linkStyle}
                         >
                             <FontAwesomeIcon 
-                            className="contactList"
+                            className="contactIcon icon"
                             icon={faBriefcase} />
-                            Portfolio
+                            {/* Portfolio */}
                         </a>
-                    </li> */}
+                    </li>
                 </ul>
             </div>
         )
     }
-}
+
 
 export default Contact;
 

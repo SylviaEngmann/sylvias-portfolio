@@ -1,18 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 
-class Intro extends Component {
-    render(){
+function Intro () {
+
         return(
             <div className="intro">
-                <p>
-                Hello, I'm Sylvia. <br/>
-                A Web Designer & Full Stack Engineer, <br/>
-                based in Ghana.
-                </p>
+                <h1>Hello, I'm Sylvia. </h1>
+                <p>A Web Designer & Full Stack Engineer, based in Ghana.</p>
             </div> 
         )
     }
-}
 
 export default Intro;
