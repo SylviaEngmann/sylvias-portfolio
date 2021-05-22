@@ -31,6 +31,11 @@ function App() {
             </Row>
           </Col>
         </Row>
+        <Row className="justify-content-md-center">
+          <Col>
+            <Contact />
+          </Col>
+        </Row>
       </Container>
   );
 }

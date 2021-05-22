@@ -8,13 +8,15 @@ const linkStyle = {
     textDecoration: 'none'
   };
 
+const email = "sylvia.engmann8@gmail.com"
+
 function Contact() {
         return(
             <div>
                 <ul className="contactDiv">
                     <li>
                         <a 
-                        href = "#home"
+                        href = {`mailto:${email}`}
                         style={linkStyle}
                         >
                             <FontAwesomeIcon 
@@ -37,7 +39,6 @@ function Contact() {
             </div>
         )
     }
-
 
 export default Contact;
 

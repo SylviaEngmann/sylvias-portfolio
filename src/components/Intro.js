@@ -6,7 +6,7 @@ function Intro () {
         return(
             <div className="intro">
                 <h1>Hello, I'm Sylvia. </h1>
-                <p>A Web Designer & Full Stack Engineer, based in Ghana.</p>
+                <p>A full stack engineer, based in Ghana.</p>
             </div> 
         )
     }
