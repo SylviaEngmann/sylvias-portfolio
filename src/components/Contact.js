@@ -78,7 +78,7 @@ function Contact() {
                                 <Card.Body>
                                     <Card.Title>My Portfolio</Card.Title>
                                     <Card.Text>
-                                    A sigle page application for displaying contact details and projects, built in ReactJS. 
+                                    A single page application for displaying contact details and projects, built in ReactJS. 
                                     </Card.Text>
                                     <Card.Link 
                                     href="https://sylviaengmann.herokuapp.com/" 
