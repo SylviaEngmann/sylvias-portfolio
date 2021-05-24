@@ -5,7 +5,7 @@ import '../App.css';
 function Portfolio() {
     return(
         <Row>
-            <Col></Col>
+            <Col>portfolio</Col>
             <Col></Col>
         </Row>
     )

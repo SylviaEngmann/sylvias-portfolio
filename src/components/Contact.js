@@ -26,7 +26,7 @@ function Contact() {
                         </a>
                     </li>
                     <li>
-                        <a href = "#home"
+                        <a href = "/portfolio"
                         style={linkStyle}
                         >
                             <FontAwesomeIcon 
