@@ -45,7 +45,8 @@ li{
 }
 
 .socials {
-  margin: 5rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
   display: block;
 }
 .icon {

@@ -27,14 +27,14 @@ function Socials() {
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
-                    {/* <li>
+                    <li>
                         <a 
                         target = "_blank"
                         rel = "noreferrer"
                         href = "https://twitter.com/SylviaEngmann">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
-                    </li> */}
+                    </li>
                     <li>
                         <a 
                         target = "_blank"

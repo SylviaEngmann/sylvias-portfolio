@@ -5,7 +5,8 @@ import Contact from './components/Contact';
 import Socials from './components/Socials';
 import Logo from './components/Logo';
 import ProfileImage from './components/ProfileImage';
-import Intro from './components/Intro';  
+import Intro from './components/Intro';
+  
 
 
 function App() {
