@@ -14,8 +14,8 @@ function Portfolio() {
     return(
         <div>
             <Row>
-                <Col sm={0} md lg={1}></Col>
-                <Col sm={12} md lg={10}>
+                <Col sm={0} md lg={3}></Col>
+                <Col sm={12} md lg={6}>
                     <Card style={cardStyle}>
                         <Card.Body>
                             <Card.Title style={{fontWeight:'800', fontSize: '1.5rem'}}>my health passport.</Card.Title>
@@ -26,12 +26,12 @@ function Portfolio() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col sm={0} md lg={1}></Col>
+                <Col sm={0} md lg={3}></Col>
             </Row>
 
             <Row>
-                <Col sm={0} md lg={1}></Col>
-                <Col sm={12} md lg={10}>
+                <Col sm={0} md lg={3}></Col>
+                <Col sm={12} md lg={6}>
                     <Card style={cardStyle}>
                         <Card.Body>
                             <Card.Title style={{fontWeight:'800', fontSize: '1.5rem'}}>nota.</Card.Title>
@@ -42,12 +42,12 @@ function Portfolio() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col sm={0} md lg={1}></Col>
+                <Col sm={0} md lg={3}></Col>
             </Row>
 
             <Row>
-                <Col sm={0} md lg={1}></Col>
-                <Col sm={12} md lg={10}>
+                <Col sm={0} md lg={3}></Col>
+                <Col sm={12} md lg={6}>
                     <Card style={cardStyle}>
                         <Card.Body>
                             <Card.Title style={{fontWeight:'800', fontSize: '1.5rem'}}>Eat It Upp</Card.Title>
@@ -58,7 +58,7 @@ function Portfolio() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col sm={0} md lg={1}></Col>
+                <Col sm={0} md lg={3}></Col>
             </Row>
         </div>
         

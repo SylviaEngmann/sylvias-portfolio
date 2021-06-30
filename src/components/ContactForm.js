@@ -1,17 +1,31 @@
 import React, {useState} from 'react';
+import {send} from 'emailjs-com';
+import{ init } from 'emailjs-com';
 import '../App.css';
 
+require("dotenv").config();
+
+
 const ContactFormData = {
-    name: "",
+    from_name: "",
+    to_name: "Sylvia",
     email: "",
     subject: "",
     message: "",
 };
 
-const email = "sylvia.engmann8@gmail.com"
+init("user_lGvgDpnxAcIpMBpHHLxhd");
+const SERVICE_ID = "service_f8t6bmd"
+const TEMPLATE_ID = "template_lijcaba"
+
+//TODO : Fix the env problem
+// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
+// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
+
 
 function ContactForm() {
     const [formData, setFormData] = useState(ContactFormData);
+
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -23,19 +37,29 @@ function ContactForm() {
     
       const handleSubmit = (event) => {
         event.preventDefault();
-        //props.submitCb(formData);
+        console.log(formData);
+        send(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            formData,
+        )
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        })
+        .catch((err) => {
+            console.log('FAILED', err);
+        });
         setFormData(ContactFormData);
       }
-
         return(
             <div>
-                <form onSubmit={handleSubmit}>                      
+                <form onSubmit={handleSubmit}>                     
                         <input 
                             type="text"
-                            name="clientname"
+                            name="from_name"
                             placeholder="Your name"
-                            value={formData.name}
-                            onChange={handleChange} 
+                            value={formData.from_name}
+                            onChange={handleChange}
                         /> 
                         <input 
                             type="text"
@@ -60,7 +84,7 @@ function ContactForm() {
 
                         </textarea>
                   <div className="btn-div">
-                        <button type="submit" className ="sub btn">Send Message</button>
+                        <button type="submit" className ="submitButton">Send Message</button>
                   </div>
                </form>
             </div>

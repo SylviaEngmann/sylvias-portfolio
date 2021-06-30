@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col} from 'react-bootstrap';
-import { Switch, Route, Router, useHistory } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import Contact from './components/Contact';
 import Logo from './components/Logo';
 
