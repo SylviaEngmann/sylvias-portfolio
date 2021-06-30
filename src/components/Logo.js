@@ -1,16 +1,18 @@
 import React from 'react';
+import logo from '../assets/se-logo.png';
 import '../App.css';
 
 
 function Logo () {
         return(
-                    <a 
-                    className="home"
-                    href="#home"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    <a
+                    href="/"
                     >
-                    SME.
+                        <img
+                        src={logo}
+                        className="logo"
+                        alt="logo"
+                        />
                     </a>
             
         )

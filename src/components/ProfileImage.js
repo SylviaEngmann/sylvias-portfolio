@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import profileImage from '../assets/image.png';
 import '../App.css';
 
 
-class ProfileImage extends Component {
-    render(){
+function ProfileImage (){
+
         return(
             <div className="profImage">
                 <img 
@@ -15,6 +15,5 @@ class ProfileImage extends Component {
             </div>
         )
     }
-}
 
 export default ProfileImage;
