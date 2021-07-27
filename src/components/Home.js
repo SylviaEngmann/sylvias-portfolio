@@ -10,15 +10,15 @@ import ProfileImage from './ProfileImage';
 function Home () {
 
         return(
-            <div >
+            <div className="home-screen">
                 <Row>
-                    <Col>
+                    <Col sm={12} md lg={4}>
                         <Socials />
                     </Col>
-                    <Col>
+                    <Col sm={12} md lg={4}>
                         <Intro />
                     </Col>
-                    <Col>
+                    <Col sm={12} md lg={4}>
                         <ProfileImage />
                     </Col>
                 </Row>

@@ -127,6 +127,15 @@ div form textarea {
 
 
 @media screen and (max-width: 600px) {
+  .home-screen {
+    text-align: center;
+  }
+
+  .socials {
+    position: relative;
+    left: 2rem;
+  }
+
   nav ul li a {
     font-size: 1rem;
   }
