@@ -16,7 +16,6 @@ const history = createHistory({forceRefresh:true});
 function App() {
   return (
       <Container fluid>
-
         <Row>
           <Col sm={12} md lg={3}>
             <Logo />
