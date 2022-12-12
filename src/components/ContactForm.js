@@ -3,8 +3,6 @@ import {send} from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import '../App.css';
 
-require("dotenv").config();
-
 
 const ContactFormData = {
     from_name: "",
@@ -14,13 +12,7 @@ const ContactFormData = {
     message: "",
 };
 
-init("user_lGvgDpnxAcIpMBpHHLxhd");
-const SERVICE_ID = "service_f8t6bmd"
-const TEMPLATE_ID = "template_lijcaba"
-
-//TODO : Fix the env problem
-// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
-// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
+init(process.env.USER_ID)
 
 
 function ContactForm() {
@@ -39,8 +31,8 @@ function ContactForm() {
         event.preventDefault();
         console.log(formData);
         send(
-            SERVICE_ID,
-            TEMPLATE_ID,
+            process.env.SERVICE_ID,
+            process.env.TEMPLATE_ID,
             formData,
         )
         .then((response) => {
